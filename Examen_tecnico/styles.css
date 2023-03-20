@@ -1,0 +1,114 @@
+@import "./vars.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap');
+
+.layout{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-uno);    
+}
+
+.div-titulo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: var(--color-dos);
+    padding: 20px;
+}
+
+.div-titulo h1 {
+    font-weight: 300;
+}
+
+.container-form {
+    height: 250px;
+    width: 500px;
+    background-color: var(--color-dos);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    margin : 0 0 20px 0;
+}
+
+.container-form > h2 {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.switch-container{
+    margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-submit{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-tres);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn-submit:hover{
+    scale: 1.1;
+}
+
+.container-render{
+    width: 500px;
+    height: 100%;
+    background-color: var(--color-dos);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    margin : 0 0 20px 0;
+}
+
+

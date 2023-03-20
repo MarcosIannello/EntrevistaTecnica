@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Listado empleados</title>
+</head>
+<body>
+    <div class="div-titulo"> 
+        <h1> Listado empleados </h1>        
+    </div>
+    <div class="layout" id="layout">
+    
+        <div class="container-form">
+                <h2> Ingrese un nuevo empleado </h2>
+                <form class="formulario" action="#" id = "Formulario">
+                    <div class="input-container"> 
+                        <input class="input" type="text" id="nombre" placeholder="Nombre">
+                        <input class="input" type="text" id="apellido" placeholder="Apellido">
+                    </div>
+                    <div class="switch-container">
+                        <input type="checkbox" name="switch-button" id="status-switch" class="switch-button__checkbox">
+                        <label for="switch-label" class="switch-button__label">Activo/inactivo</label>
+                    </div>
+                    <button class="btn-submit" type="submit" id="btnCrearEmp">Agregar</button> 
+                </form>
+        </div>
+    
+        <div class="container-lista"> 
+            <div class="container-listadosEmpleados">
+                <div class="container-render" id="TotalEmpleados"> 
+                    <h1>Total de Empleados</h1>
+                </div>
+                <div class="container-render" id="Activos"> 
+                    <h1>Empleados Activos</h1>
+                </div>
+        
+                <div class="container-render" id="Inactivos"> 
+                    <h1>Empleados Inactivos</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"> </script>
+</body>
+</html>
